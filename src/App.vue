@@ -1,32 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <scale></scale>
+    <div id="content">
+      <side-bar></side-bar>
+      <img-area></img-area>
     </div>
-    <router-view/>
   </div>
 </template>
+<script>
+import imgArea from './components/imgArea'
+import scale from './components/scale'
+import sideBar from './components/sidebar'
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components: {
+    imgArea,
+    scale,
+    sideBar
   }
 }
+</script>
+<style lang="less">
+  #content{
+  
+  }
 </style>
