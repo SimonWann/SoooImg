@@ -5,9 +5,6 @@ import store from './store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-const { BrowserWindow } = require('electron').remote
-let win = new BrowserWindow({ width: 800, height: 600 })
-win.loadURL('https://github.com')
 
 
 Vue.use(BootstrapVue)
